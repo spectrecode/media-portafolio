@@ -1,0 +1,148 @@
+body{
+	margin: 0;
+}
+.general{
+	margin: 0 auto;
+	width: 80%;
+	height: 1000px;
+	border: 0px solid red;
+}
+.general .container{
+	height: 100%;
+	max-width: 1100px;
+	margin: auto auto;
+	border: 0px solid red;
+}
+
+.elemento{
+	height: 100%;
+	border: 0px solid #000;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 70px;
+}
+.lista-elementos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+}
+
+.lista-elementos a{
+	display: block;
+	text-align: center;
+	width: 200px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+
+.lista-elementos a img{
+	width: 102px;
+} 
+
+
+p{
+	color: #4c4c4c;
+	text-align: center;
+	font-family: 'GothamRounded-Light';
+	margin-top: -10px;
+	font-size: 14pt;
+}
+
+a p:hover {
+	color: red;
+	transition: 0.2s;
+}
+
+
+.logo{
+	position: fixed;
+	right: 36px;
+	bottom: 18px;
+	display: flex;
+	justify-content: flex-end;
+} 
+.logo img{
+	height: 90px;
+}
+.arriba{
+	position: absolute;
+}
+.arriba img{
+	height: 130px;
+}
+.abajo{
+	position: fixed;
+	right: 100px;
+	bottom: 0px;
+	
+}
+.abajo img{
+	height: 130px;
+
+}
+
+
+@media screen and (max-width: 1385px){
+
+.general{
+	margin: 0 auto;
+	width: 80%;
+	height: 560px;
+	border: 0px solid red;
+}
+.general .container{
+	height: 84%;
+	max-width: 1100px;
+	margin: auto auto;
+	border: 0px solid red;
+}
+
+.elemento{
+	height: 165%;
+	border: 0px solid #000;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 70px;
+}
+.lista-elementos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+}
+
+.lista-elementos a{
+	display: block;
+	text-align: center;
+	width: 165px;
+	margin-bottom: 20px;
+	margin-right: 5px;
+	text-decoration: none;
+}
+
+
+.lista-elementos a img{
+	width: 75px;
+} 
+
+p{
+	color: #4c4c4c;
+	text-align: center;
+	font-family: 'GothamRounded-Light';
+	margin-top: -10px;
+	font-size: 13pt;
+}
+
+
+}

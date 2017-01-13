@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /demo/
+Disallow: /C/
+Disallow: /tag/
+Disallow: /compra/
+Disallow: /nuevo/
+Disallow: /portfolio/
+Disallow: /product-category/
+Disallow: /cafe.php
+Disallow: /header.php
+Disallow: /enviarform.php
+Disallow: /footer.php
+Disallow: /bravo/

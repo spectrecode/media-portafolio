@@ -1,0 +1,1637 @@
+@font-face {
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    src:url(../fonts/GothamRnd-Bold.otf) format("OpenType")
+}
+@font-face {
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    src:url(../fonts/GothamRnd-Medium.otf) format("OpenType")
+}
+@font-face {
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    src:url(../fonts/gotham-rounded-book.otf) format("OpenType")
+}
+@font-face {
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    src:url(../fonts/GothamRnd-Light.otf) format("OpenType")
+}
+/*HEADER*/
+header{
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: -190px;
+    transition: 1.5s all ease;
+    padding: 50px 25px;
+}
+header.active{
+    left: 0px; 
+}
+header.close{
+    left: -190px; 
+}
+header>a{
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+header>a i{
+    color: white;
+}
+header img{
+    width: 80px;
+}
+header nav{
+    margin-top: 50px;
+    border: 1px solid rgba(255,255,255,0.74);
+    padding: 10px 0;
+}
+header nav ul{
+    padding-left: 0px;
+    list-style: none;
+}
+header nav ul li{
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+header nav ul li a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    margin-right: -1px;
+}
+header nav ul li a.active{
+    border-right: 2px solid #E80000;
+}
+header nav ul li a:hover{
+    color: white;
+    text-decoration: none;
+}
+header nav ul li a i{
+    font-size: 16px !important;
+    bottom: -3px;
+    position: relative;
+}
+.menu-flotante{
+    position: fixed;
+    top:20px;
+    left: 20px;
+    z-index: 10;
+}
+.menu-flotante ul{
+    padding-left: 0px;
+}
+.menu-flotante ul li{
+    list-style: none;
+}
+.menu-flotante ul li a{
+    width: 50px;
+    height: 50px;
+    display: table;
+    background-color: #666666;
+    text-align: center;
+}
+.menu-flotante ul li:nth-child(1) a{
+    background-color: black;
+}
+.menu-flotante ul li a:hover{
+    text-decoration: none;
+    background: #DD0000;
+    transition: all ease-in-out .2s;
+}
+.menu-flotante ul li a.active{
+    border-right: 2px solid #E80000;
+}
+.menu-flotante ul li a i{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 18px;
+}
+@media (min-width: 0px) and (max-width: 1170px){
+    header{
+        background-color: black;
+    }
+    .menu-flotante ul li{
+        display: none;
+    }
+    .menu-flotante ul li:nth-child(1){
+        display: block;
+    }
+}
+/*END HEADER*/
+/*BANNER*/
+#home{
+    background-image: url("../img/home-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 250px;
+}
+#home h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    color: black;
+}
+#home h2 b{
+    font-size: 80px;
+    color: #DD0000;
+}
+#home img{
+    width: 80px;
+}
+#home p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    color: black;
+}
+#home a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background-color: #DD0000;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 40px;
+    padding: 9px 40px;
+}
+@media (max-width: 767px) {
+    #home h2{
+        font-size: 25px;
+    }
+    #home h2 b{
+        font-size: 50px;
+    }
+    #home p{
+        font-size: 20px;
+    }    
+}
+/*END BANNER*/
+/*EXITO*/
+#exito{
+    background-image: url("../img/exito-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: -40px;
+    transform: skew(0deg, -3deg);
+}
+#exito>div{
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#exito .titulo img{
+    width: 90px;
+}
+#exito .titulo h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DB0000;
+    margin-top: 10px;
+}
+#exito .titulo p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #454545;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+#exito .proyecto img:nth-child(1){
+    width: 40%;
+    margin-bottom: 20px;
+}
+#exito .proyecto img:nth-child(2){
+    width: 100%;
+}
+#exito .proyecto p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    color: #454545;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#exito a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #DB0000;
+    border: 1px solid #DB0000;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 30px;
+}
+#exito a i{
+    font-size: 18px;
+    position: relative;
+    bottom: -3px;
+}
+@media (max-width: 767px) {
+    #exito .titulo p{
+        width: auto;
+    }    
+}
+/*END EXITO*/
+/*ESPECIALISTAS*/
+#especialistas{
+    background-image: url("../img/especialista-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transform: skew(0deg, -3deg);
+}
+#especialistas>div{
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#especialistas .titulo img{
+    width: 90px;
+}
+#especialistas .titulo h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DB0000;
+    margin-top: 10px;
+}
+#especialistas .servicio img{
+    width: 80%;
+    margin-top: 30px;
+}
+#especialistas .servicio h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #DB0000;
+}
+#especialistas .servicio p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 18px;
+    color: #454545;
+    margin-top: 20px;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#especialistas a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #DB0000;
+    border: 1px solid #DB0000;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 30px;
+}
+#especialistas a i{
+    font-size: 18px;
+    position: relative;
+    bottom: -3px;
+}
+@media (max-width: 767px) {
+    #especialistas .servicio p{
+        width: auto;    
+    }    
+}
+@media (min-width: 750px) and (max-width: 970px) {
+    #especialistas .servicio p{
+        width: auto;    
+    }
+}
+
+/*END ESPECIALISTAS*/
+/*CAFE*/
+#cafe{
+    background-image: url("../img/cafe-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    margin-top: -40px;
+    transform: skew(0deg, -3deg);
+}
+#cafe>div{
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#cafe .titulo img{
+    width: 90px;
+}
+#cafe .titulo h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DB0000;
+    margin-top: 10px;
+}
+#cafe .titulo p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #454545;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+#cafe .form{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.63);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.63);
+    background-color: white;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px 50px;
+}
+#cafe .form h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    color: #5A5A5A;
+    margin-bottom: 40px;
+}
+#cafe .form ul{
+    padding-left: 0px;
+    list-style: none;
+    text-align: left;
+}
+#cafe .form ul li{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #454545;
+    margin-bottom: 15px;
+}
+#cafe .form ul li i{
+    color: #DB0000;
+}
+#cafe .form p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #454545;
+    text-align: left;
+    margin-top: 40px;
+}
+#cafe .form ol{
+    padding-left: 0px;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 40px;
+}
+#cafe .form ol li{
+    display: inline-block;
+    margin-right: 10px;
+}
+#cafe .form ol li a{
+    border: 1px solid #DB0000;
+    width: 30px;
+    height: 30px;
+    display: table;
+    text-align: center;
+    text-decoration: none;
+    transition: all 1s;
+}
+#cafe .form ol li a:hover{
+    background-color: #DB0000;
+    color: white;
+    transition: all 1s;
+}
+#cafe .form ol li a i{
+    color: #DB0000;
+    display: table-cell;
+    vertical-align: middle;
+}
+#cafe .form ol li a:hover i{
+    color: white;
+}
+#cafe .form label{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #454545;
+    float: left;
+}
+#cafe .form input, #cafe .form select, #cafe .form textarea{
+    width: 100%;
+    border: 1px solid #C3C3C3;
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #C3C3C3;
+    padding: 5px 10px;
+    margin-top: 5px; 
+    margin-bottom: 5px;
+}
+#cafe .form button{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #DB0000;
+    color: white;
+    border: 0;
+    padding: 4px 30px;
+    margin-top: 15px;
+}
+@media (max-width: 767px) {
+    #cafe .form{
+        width: 100%;
+        padding: 30px 10px;
+    }    
+}
+@media (min-width: 750px) and (max-width: 970px) {
+    #cafe .form{
+        width: 100%;
+    } 
+}
+/*END CAFE*/
+/*SERVICIOS*/
+#servicios{
+    background-image: url("../img/servicios-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+#servicios h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #323232;
+}
+#servicios h2 b{
+    font-size: 65px;
+    color: #DD0000;
+    font-weight: 500;
+}
+#servicios img{
+    width: 120px;
+}
+#servicios p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #323232;
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#servicios a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background-color: #DD0000;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 40px;
+}
+@media (max-width: 767px) {
+    #servicios h2{
+        font-size: 25px;
+    }
+    #servicios h2 b{
+        font-size: 50px;
+    }
+    #servicios p{
+        font-size: 20px;
+        width: auto;
+    }    
+}
+/*END SERVICIOS*/
+/*BRANDING*/
+#branding{
+    background-image: url("../img/exito-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-top: -40px;
+    transform: skew(0deg, -3deg);
+}
+#branding>div{
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#branding img{
+    width: 100%;
+}
+#branding h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DB0000;
+}
+#branding p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #454545;
+    margin-top: 20px;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+#branding label{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #454545;
+    display: block;
+}
+#branding ul{
+    padding-left: 0px;
+    list-style: none;
+}
+#branding ul li{
+    display: inline-block;
+    width: 99px;
+}
+#branding ul li i{
+    color: #464646;
+    border: 1px solid #464646;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    font-size: 40px;
+}
+#branding ul li h4{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    color: #454545;
+}
+#branding a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #DB0000;
+    border: 1px solid #DB0000;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 20px;
+}
+#branding a i{
+    font-size: 18px;
+    position: relative;
+    bottom: -3px;
+}
+@media (min-width: 750px) and (max-width: 970px) {
+    #branding p{
+        width: auto;
+    } 
+}
+/*END BRANDING*/
+/*MARKETING DIGITAL*/
+#marketing-digital{
+    background-image: url("../img/especialista-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    transform: skew(0deg, -3deg);
+}
+#marketing-digital>div{
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#marketing-digital img{
+    width: 100%;
+}
+#marketing-digital h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DB0000;
+}
+#marketing-digital p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #454545;
+    margin-top: 20px;
+    width: 330px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+#marketing-digital label{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #454545;
+    display: block;
+}
+#marketing-digital ul{
+    padding-left: 0px;
+    list-style: none;
+}
+#marketing-digital ul li{
+    display: inline-block;
+    width: 99px;
+}
+#marketing-digital ul li i{
+    color: #464646;
+    border: 1px solid #464646;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    font-size: 40px;
+}
+#marketing-digital ul li h4{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    color: #454545;
+}
+#marketing-digital a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #DB0000;
+    border: 1px solid #DB0000;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-top: 20px;
+}
+#marketing-digital a i{
+    font-size: 18px;
+    position: relative;
+    bottom: -3px;
+}
+@media (min-width: 750px) and (max-width: 970px) {
+    #marketing-digital p{
+        width: auto;
+    } 
+}
+/*END MARKETING DIGITAL*/
+/*PORTAFOLIO*/
+#portafolio-btn:hover{
+    background-color: #DD0000;
+    transition: all ease-in-out .2s;
+    border: 1px inset white;
+    color: white;
+}
+#portafolio{
+    background-image: url("../img/portafolio-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+#portafolio h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #323232;
+}
+#portafolio h2 b{
+    font-size: 65px;
+    color: #DD0000;
+    font-weight: 500;
+}
+#portafolio img{
+    width: 120px;
+}
+#portafolio p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #323232;
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 767px) {
+    #portafolio h2{
+        font-size: 25px;
+    }
+    #portafolio h2 b{
+        font-size: 50px;
+    }
+    #portafolio p{
+        font-size: 20px;
+        width: auto;
+    }    
+}
+/*END PORTAFOLIO*/
+/*SLIDER PORTAFOLIO*/
+#slider-portafolio{
+    background-image: url("../img/especialista-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -40px;
+    transform: skew(0deg, -3deg);
+}
+#slider-portafolio>div{
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#slider-portafolio h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+}
+#slider-portafolio p{
+    color: #454545;
+    font-family: "GothamRnd";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 18px;
+    margin-top: 20px;
+}
+#slider-portafolio h4{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #dd0000;
+}
+#slider-portafolio ul{
+    padding-left: 15px;
+}
+#slider-portafolio ul li{
+    color: black;
+    font-family: "GothamRnd";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+}
+#slider-portafolio ul li b{
+    font-weight: 500;
+}
+#slider-portafolio img.logo-portafolio{
+    width: 200px;
+}
+#slider-portafolio img.img-portafolio{
+    width: 100%;
+}
+/*END SLIDER PORTAFOLIO*/
+/*PROYECTOS*/
+#proyectos .empecemos a, #portafolio-btn{
+    border: 1px solid #db0000;
+    color: #db0000;
+    display: inline-block;
+    font-family: "GothamRnd";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px 25px;
+    text-decoration: none;
+    transition: all ease-out 0.5s;
+}
+#proyectos .empecemos a:hover{
+    background-color: #DD0000; 
+    transition: all ease-in-out .2s;
+    border: 1px outset white;
+    color: white;
+}
+#proyectos{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-top: -40px;
+}
+#proyectos .titulo img{
+    width: 90px;
+}
+#proyectos .titulo h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #DB0000;
+    margin-bottom: 30px;
+}
+#proyectos .titulo h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    color: #DB0000;
+    margin-top: 20px;
+}
+#proyectos .titulo p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #454545;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+#proyectos .proyecto>img{
+    width: 100%;
+}
+#proyectos .proyecto{
+    position: relative;
+    /*margin-bottom: 10px;*/
+}
+#proyectos .proyectos-group .col-lg-4{
+    padding: 0;
+}
+#proyectos .proyecto:hover .proyecto-encima{
+    animation: hover .5s linear;
+    animation-fill-mode: both;
+}
+@keyframes hover {
+    100% {opacity: 1;}
+}
+#proyectos .proyectos-group > div:nth-child(1) .proyecto-encima{
+    background-color: rgba(0,46,90,0.8);
+}
+#proyectos .proyectos-group > div:nth-child(2) .proyecto-encima{
+    background-color: rgba(0,95,39,0.8);
+}
+#proyectos .proyectos-group > div:nth-child(3) .proyecto-encima{
+    background-color: rgba(175,9,33,0.8);
+}
+#proyectos .proyectos-group > div:nth-child(4) .proyecto-encima{
+    background-color: rgba(243, 62, 24, 0.8);
+}
+#proyectos .proyectos-group > div:nth-child(5) .proyecto-encima{
+    background-color: rgba(142, 185, 4, 0.8);
+}
+#proyectos .proyectos-group > div:nth-child(6) .proyecto-encima{
+    background-color: rgba(50, 54, 58, 0.8);
+}
+#proyectos .proyectos-group:nth-child(3) > div:nth-child(1) .proyecto-encima{
+    background-color: rgba(171, 34, 112, 0.8);
+}
+#proyectos .proyectos-group:nth-child(3) > div:nth-child(2) .proyecto-encima{
+    background-color: rgba(208, 8, 8, 0.8);
+}
+#proyectos .proyectos-group:nth-child(3) > div:nth-child(3) .proyecto-encima{
+    background-color: rgba(16, 103, 167, 0.8);
+}
+#proyectos .proyectos-group:nth-child(3) > div:nth-child(4) .proyecto-encima{
+    background-color: rgba(151, 160, 40, 0.8);
+}
+#proyectos .proyectos-group:nth-child(3) > div:nth-child(5) .proyecto-encima{
+    background-color: rgba(230, 114, 52, 0.8);
+}
+#proyectos .proyectos-group:nth-child(3) > div:nth-child(6) .proyecto-encima{
+    background-color: rgba(49, 177, 231, 0.8);
+}
+#proyectos .proyectos-group:nth-child(4) > div:nth-child(1) .proyecto-encima{
+    background-color: rgba(23, 89, 136, 0.8);
+}
+#proyectos .proyectos-group:nth-child(4) > div:nth-child(2) .proyecto-encima{
+    background-color: rgba(179, 49, 69, 0.8);
+}
+#proyectos .proyectos-group:nth-child(4) > div:nth-child(3) .proyecto-encima{
+    background-color: rgba(50, 54, 58, 0.8);
+}
+#proyectos .proyecto-encima{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+    display: block;
+    opacity: 0;
+}
+#proyectos .proyecto-encima img{
+    width: 110px;
+}
+#proyectos .proyecto-encima p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    color: white;
+    line-height: 17px;
+}
+#proyectos .clientes{
+    margin-top: 20px;
+}
+#proyectos .clientes img{
+    width: 100%;
+}
+#proyectos .empecemos a i{
+    bottom: -3px;
+    font-size: 18px;
+    position: relative;
+}
+#proyectos .empecemos p{
+    font-family: "GothamRnd";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #454545;
+    margin-top: 15px;
+}
+/*END PROYECTOS*/
+/*CONTACTO*/
+#contacto{
+    background-image: url("../img/contacto-fondo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 250px;
+}
+#contacto h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #323232;
+}
+#contacto h2 b{
+    font-size: 65px;
+    color: #DD0000;
+    font-weight: 500;
+}
+#contacto img{
+    width: 120px;
+}
+#contacto p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #323232;
+    width: 550px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#contacto a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    background-color: #DD0000;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 40px;
+}
+@media (max-width: 767px) {
+    #contacto h2{
+        font-size: 25px;
+    }
+    #contacto h2 b{
+        font-size: 50px;
+    }
+    #contacto p{
+        font-size: 20px;
+        width: auto;
+    }    
+}
+/*END CONTACTO*/
+/*BLOG*/
+#blog{
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+#blog h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #323232;
+}
+#blog h2 b{
+    font-size: 65px;
+    color: #DD0000;
+    font-weight: 500;
+}
+#blog img{
+    width: 150px;
+}
+#destacados img{
+    width: 100%;
+}
+#destacados .col-lg-4:nth-child(1) .desc-header{
+    border: 1px solid #959595;
+    border-bottom: 0;   
+}
+#destacados .col-lg-4:nth-child(2) .desc-header{
+    border-top: 1px solid #959595;
+    border-bottom: 0;    
+}
+#destacados .col-lg-4:nth-child(3) .desc-header{
+    border: 1px solid #959595;
+    border-bottom: 0;
+}
+.desc-header{
+    background-color: white;
+    padding: 30px 10px;
+    position: relative;
+}
+.desc-header::after{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 15px solid rgba(255, 255, 255, 1);
+    bottom: -14px;
+    content: "";
+    float: left;
+    height: 0;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+    width: 0
+}
+.desc-header h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #4d4d4d;
+    margin-top: 0px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+}
+#destacados .col-lg-4:hover .desc-header{
+    cursor: pointer;
+    background-color: #363636;
+}
+#destacados .col-lg-4:hover .desc-header::after{
+    border-top: 15px solid rgba(54, 54, 54, 1);
+}
+#destacados .col-lg-4:hover a{
+    text-decoration: none;
+}
+#destacados .col-lg-4:hover h2{
+    color: white;
+}
+#destacados .col-lg-4:hover p{
+    color: white;
+}
+.desc-header p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    color: #4d4d4d;
+    margin-bottom: 0px;
+    height: 34px;
+}
+#inter-blog{
+    padding-top: 70px;
+    padding-bottom: 180px;
+}
+#inter-blog article{
+    border: 1px solid #959595;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+#inter-blog article h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    color: #d80613;
+    margin-left: 20px;
+}
+#inter-blog article h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    color: #323232;
+    margin-left: 20px;
+    margin-top: 15px; 
+    margin-bottom: 30px;
+}
+#inter-blog article p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #363636;
+    margin-top: 30px;
+    line-height: 28px;
+    text-align: justify;
+}
+#inter-blog article img.icon{
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    left: -7px;
+}
+#inter-blog article img.img-noticia{
+    width: 100%;
+}
+#inter-blog article a.leyendo{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #363636;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.redes{
+    border-top: 1px solid #e3e3e3;
+    padding-top: 17px; 
+    padding-bottom: 10px;   
+}
+.redes span{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #7c7c7c;
+}
+.redes span b{
+    font-weight: 500;
+}
+.redes ul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+    display: inline-block;
+}
+.redes ul li{
+    display: inline-block;
+    margin-left: 10px; 
+    margin-right: 10px;
+}
+.redes ul li a{
+    color: #7c7c7c;
+}
+#buscar-blog{
+    position: relative;
+}
+#buscar-blog label{
+    left: 10px;
+    position: absolute;
+    top: 14px;
+}
+#buscar-blog label i{
+    font-size: 20px;
+    color: #c2c2c2;
+}
+#buscar-blog input{
+    width: 100%;
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #c2c2c2;
+    padding: 12px 20px 12px 35px;
+    border: 1px solid #959595;
+}
+#amamos-blog{
+    border: 1px solid #959595;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+#amamos-blog h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    color: #eb1c24;
+}
+#amamos-blog h4{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #323232;
+    margin-top: 20px;
+}
+#amamos-blog h4 i{
+    font-style: normal;
+    color: #eb1c24;
+}
+#amamos-blog p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: #4d4d4d;
+    text-align: justify;
+    line-height: 17px;
+}
+#fb-blog{
+    margin-top: 20px;
+}
+#categorias-blog{
+    border: 1px solid #959595;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+#categorias-blog h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+#categorias-blog ul{
+    padding-left: 20px;
+    display: inline-block;
+}
+#categorias-blog ul li{
+    margin-bottom: 5px;
+}
+#categorias-blog ul li a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    color: #454545;
+}
+#categorias-blog ul li a:hover{
+    text-decoration: none;
+    font-weight: 500;
+}
+#rank-blog{
+    border: 1px solid #959595;
+    padding: 10px 0px;
+    margin-top: 20px;
+}
+#rank-blog h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+.noti-rank{
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    border-bottom: 1px solid #959595;
+    padding: 20px 20px 10px 20px;
+}
+#rank-blog .noti-rank:nth-child(4){
+    border-bottom: 0px;
+}
+.noti-rank a{
+    text-decoration: none;
+}
+.noti-rank img{
+    width: 100%;
+}
+.noti-rank h5{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #4c4c4c;
+    margin-bottom: 0px;
+}
+.noti-rank span{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #7c7c7c;
+}
+#archivo-blog{
+    border: 1px solid #959595;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+#archivo-blog h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    color: #4c4c4c;
+    margin-bottom: 20px;
+}
+#archivo-blog ul{
+    padding-left: 0px;
+}
+#archivo-blog ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+#archivo-blog ul li a{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #363636;
+    margin-top: 20px;
+}
+#archivo-blog ul li a:hover{
+    text-decoration: none;
+}
+#archivo-blog ul li a i{
+    font-style: normal;
+    color: #eb1c24;
+}
+/*END BLOG*/
+/*NOTICIA INTERNA*/
+#not-inter-blog{
+    padding-top: 70px;
+    padding-bottom: 180px;
+}
+.noticia-interna article{
+    border: 1px solid #959595;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.noticia-interna h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    color: #d80613;
+    margin-left: 20px;
+}
+.noticia-interna h3{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+    color: #323232;
+    margin-left: 20px;
+    margin-top: 15px; 
+    margin-bottom: 30px;
+}
+.noticia-interna p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #363636;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    line-height: 28px;
+    text-align: justify;
+}
+.noticia-interna ul li{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #363636;
+    line-height: 28px;
+    text-align: justify;
+}
+.noticia-interna img.icon{
+    width: 25px;
+    position: absolute;
+    top: 40px;
+    left: -7px;
+}
+.noticia-interna img.img-noticia{
+    width: 100%;
+}
+.tags{
+    text-align: center;
+}
+.tags ul{
+    padding-left: 0px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.tags ul li{
+    display: inline-block;
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    color: #959595;
+}
+.tags ul li a{
+    text-decoration: none;
+    color: #959595;
+}
+/*END NOTICIA INTERNA*/
+/*FOOTER*/
+footer{
+    background-color: #3D3D3D;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: -40px;
+    z-index: 2;
+    position: relative;
+}
+footer img{
+    width: 100px;
+    margin-top: -5px;
+}
+footer ol{
+    list-style: outside none none;
+    padding-left: 0;
+    text-align: left;
+}
+footer ol li{
+    display: inline-block;
+    margin-right: 10px;
+}
+footer a{
+    border: 1px solid #B3B3B3;
+    width: 35px;
+    height: 35px;
+    display: table;
+    text-align: center;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: none;
+}
+footer a i{
+    color: #B3B3B3;
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+footer p{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    color: #C8C8C8;
+    margin-top: 5px;
+}
+@media (max-width: 767px) {
+    footer p{
+        font-size: 10px;
+    }    
+}
+/*END FOOTER*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/iconos-mi/icomoon3.eot?20kk60');
+  src:  url('../fonts/iconos-mi/icomoon3.eot?20kk60#iefix') format('embedded-opentype'),
+    url('../fonts/iconos-mi/icomoon3.ttf?20kk60') format('truetype'),
+    url('../fonts/iconos-mi/icomoon3.woff?20kk60') format('woff'),
+    url('../fonts/iconos-mi/icomoon3.svg?20kk60#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-11:before {
+  content: "\e903";
+}
+.icon-icon-7:before {
+  content: "\e904";
+}
+.icon-icon-8:before {
+  content: "\e905";
+}
+.icon-icon-9:before {
+  content: "\e906";
+}
+.icon-icon-4:before {
+  content: "\e907";
+}
+.icon-icon-5:before {
+  content: "\e908";
+}
+.icon-icon-6:before {
+  content: "\e909";
+}
+.icon-icon-2:before {
+  content: "\e90a";
+}
+.icon-icon-3:before {
+  content: "\e90b";
+}
+.icon-icon-10:before {
+  content: "\e90c";
+}
+.icon-icon-1:before {
+  content: "\e90d";
+}
+.icon-icon-12:before {
+  content: "\e900";
+}
+.icon-icon-13:before {
+  content: "\e901";
+}
+.icon-icon-14:before {
+  content: "\e902";
+}
+.icon-icon-15:before {
+  content: "\e90e";
+}
+.icon-icon-16:before {
+  content: "\e90f";
+}
+.icon-icon-17:before {
+  content: "\e910";
+}
+.icon-icon-18:before {
+  content: "\e911";
+}
+.icon-icon-19:before {
+  content: "\e912";
+}
+.icon-icon-20:before {
+  content: "\e913";
+}
+.icon-icon-21:before {
+  content: "\e914";
+}

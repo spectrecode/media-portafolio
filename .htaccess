@@ -1,0 +1,48 @@
+# Activar RewriteEngine
+RewriteEngine on
+
+# RewriteCond %{HTTPS} off
+# RewriteRule (.*) https://www.mediaimpact.pe/$1 [R=301,L,QSA]
+
+# Addtype font/opentype .otf
+# Addtype font/truetype .ttf
+# AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css font/opentype font/truetype
+
+Rewriterule ^noticia/(.+)/?$ blog-interno.php?no_url=$1
+
+Rewriterule ^categoria/(.+)/?$ categoria.php?cate_url=$1
+
+Rewriterule ^tag/(.+)/?$ tag.php?tag_url=$1
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  servicios
+#   Salida: servicios.php
+RewriteRule ^servicios/?$ servicios.php
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  portafolio
+#   Salida: portafolio.php
+RewriteRule ^portafolio/?$ portafolio.php
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  blog
+#   Salida: blog.php
+RewriteRule ^blog/?$ blog.php
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  contacto
+#   Salida: contacto.php
+RewriteRule ^contacto/?$ contacto.php
+
+# Reescribir la URL solicitada por el usuario
+#   Entrada:  navidad-2016
+#   Salida: navidad-2016.php
+RewriteRule ^navidad-2016/?$ navidad-2016.php
+
+<ifmodule mod_expires.c>
+ ExpiresActive On
+ ExpiresDefault A3600
+ <filesmatch ".(jpg|JPG|gif|GIF|png|css|ico|js)$">
+  ExpiresDefault "access plus 7 day"
+ </filesmatch>
+</ifmodule>
