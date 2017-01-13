@@ -1572,6 +1572,33 @@ footer p{
   -moz-osx-font-smoothing: grayscale;
 }
 
+/*NOSOTROS*/
+#nosotros .nosotros{
+    margin: 5% 14%;
+}
+#nosotros .nosotros b{
+    font-size: 60px;
+    color: #DD0000;
+}
+#nosotros .nosotros h2{
+    font-family: 'GothamRnd';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #323232;;
+    margin-bottom: 5%;
+}
+#nosotros .nosotros img{
+    margin: 2% auto;
+}
+#nosotros .nosotros p{
+    font-size: 16px;
+    line-height: 1.4;    
+}
+#nosotros .valores p{
+    color: #DD0000;
+    font-size: 18px;
+}
 .icon-icon-11:before {
   content: "\e903";
 }
