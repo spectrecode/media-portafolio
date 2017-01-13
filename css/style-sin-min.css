@@ -1595,10 +1595,60 @@ footer p{
     font-size: 16px;
     line-height: 1.4;    
 }
-#nosotros .valores p{
-    color: #DD0000;
-    font-size: 18px;
+#nosotros .valores{
+    margin: 3%;
 }
+#nosotros .valor .col-lg-2{
+    padding: 0;
+    margin-bottom: 20px;
+}
+#nosotros .valores .title-val p{
+    color: #DD0000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'GothamRnd';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+#nosotros .valores img{
+    background: #DD0000;
+    padding: 15%;
+}
+#nosotros .title-val{
+    position: relative;
+    height: 100px;
+}
+#nosotros .descrip p {
+    line-height: 2;
+    padding-bottom: 3%;
+    margin-bottom: 20%;
+    border-bottom: 2px solid black;
+}
+#contact-nosotros{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: -40px;
+    transform: skew(0deg, -3deg);
+    background: #EDEDED;
+}
+#contact-nosotros>div {
+    transform: skew(0deg, 3deg);
+    -webkit-backface-visibility: hidden;
+}
+#contact-nosotros b{
+    font-size: 30px;
+    color: #DD0000;
+}
+#contact-nosotros .descrip-sumate{
+    font-family: 'GothamRnd';
+    font-size: 15px;
+    color: #6F6F6F;;
+    margin-bottom: 5%;
+}
+/*#nosotros */
 .icon-icon-11:before {
   content: "\e903";
 }
