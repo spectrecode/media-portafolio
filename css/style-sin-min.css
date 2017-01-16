@@ -851,7 +851,7 @@ header nav ul li a i{
 }
 /*END SLIDER PORTAFOLIO*/
 /*PROYECTOS*/
-#proyectos .empecemos a, #portafolio-btn{
+#proyectos .empecemos a, #portafolio-btn, #contacto-btn{
     border: 1px solid #db0000;
     color: #db0000;
     display: inline-block;
@@ -1598,7 +1598,7 @@ footer p{
 #nosotros .valores{
     margin: 3%;
 }
-#nosotros .valor .col-lg-2{
+#nosotros .valor >:first-child{
     padding: 0;
     margin-bottom: 20px;
 }
@@ -1645,8 +1645,70 @@ footer p{
 #contact-nosotros .descrip-sumate{
     font-family: 'GothamRnd';
     font-size: 15px;
-    color: #6F6F6F;;
-    margin-bottom: 5%;
+    color: #6F6F6F;
+    margin: 0 55px 5% 55px;
+}
+#contact-nosotros form{
+    max-width: 80%;
+    margin: auto;
+}
+#contact-nosotros form input{
+    max-width: 354px;
+    display: inline-block;
+    margin: 4% 10px;
+}
+#contact-nosotros form textarea{
+    margin: 4% 10px;
+    max-width: 740px;
+    width: 95%;
+    border: 4px solid #ccc!important;
+}
+#contact-nosotros form input:not(:nth-child(5)),
+#contact-nosotros form textarea{
+    outline: none;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #ccc;
+}
+@media (max-width: 992px){
+    #contact-nosotros form{
+        width: 90%;
+    }
+    #contact-nosotros form input{
+        max-width: 252px;
+    }
+}
+@media (max-width: 702px){
+    #contact-nosotros form input{
+        max-width: 100%;
+        width: 42%;
+    }
+}
+@media (max-width: 502px){
+    #contact-nosotros form{
+        max-width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #contact-nosotros form input{
+        width: 90%;
+    }    
+}
+#contacto-btn{
+    background: #DD0000;
+    color: white;
+    border: 1px inset white;
+    padding: 12px 40px;
+}
+#contacto-btn:hover{
+    background-color: white;
+    transition: all ease-in-out .2s;
+    border: 1px inset #DD0000;
+    color: #DD0000;
 }
 /*#nosotros */
 .icon-icon-11:before {
