@@ -1639,10 +1639,8 @@ footer p{
 }
 #nosotros .valor >:first-child{
     padding: 0;
-    margin-bottom: 20px;
 }
 #nosotros .valores .title-val p{
-    color: #DD0000;
     font-size: 16px;
     font-weight: 700;
     font-family: 'GothamRnd';
@@ -1651,14 +1649,20 @@ footer p{
     bottom: 0;
     display: flex;
     align-items: center;
+    margin: 0;
 }
-#nosotros .valores img{
-    background: #DD0000;
-    padding: 15%;
+#nosotros .valor{
+    color: #DD0000;
+    font-size: 500%;
+}
+@media (max-width: 768px) {
+    #nosotros .valores{
+        margin:auto 15%;
+        margin-bottom: 10%;
+    }
 }
 #nosotros .title-val{
-    position: relative;
-    height: 100px;
+    height: 80px;
 }
 #nosotros .descrip p {
     line-height: 2;
@@ -1666,6 +1670,17 @@ footer p{
     margin-bottom: 20%;
     border-bottom: 3px solid black;
     border-color: #ccc;
+}
+/*contacto*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/iconos-mi/icomoon4.eot?jhbwyw');
+  src:  url('../fonts/iconos-mi/icomoon4.eot?jhbwyw#iefix') format('embedded-opentype'),
+    url('../fonts/iconos-mi/icomoon4.ttf?jhbwyw') format('truetype'),
+    url('../fonts/iconos-mi/icomoon4.woff?jhbwyw') format('woff'),
+    url('../fonts/iconos-mi/icomoon4.svg?jhbwyw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 #contact-nosotros{
     padding-top: 50px;
@@ -1678,9 +1693,18 @@ footer p{
     transform: skew(0deg, 3deg);
     -webkit-backface-visibility: hidden;
 }
-#contact-nosotros b{
-    font-size: 30px;
+#contact-nosotros .safety-pin{
+    transform: rotate(15deg);
+}
+#contact-nosotros .safety-pin i{
     color: #DD0000;
+    font-size: 100px;
+}
+#contact-nosotros h2{
+    font-size: 35px;
+    margin-top: 0;
+    color: #DD0000;
+    font-family: 'GothamRnd';
 }
 #contact-nosotros .descrip-sumate{
     font-family: 'GothamRnd';
@@ -1692,10 +1716,20 @@ footer p{
     max-width: 80%;
     margin: auto;
 }
-#contact-nosotros form input{
+#contact-nosotros form input {
     max-width: 354px;
     display: inline-block;
     margin: 4% 10px;
+}
+#contact-nosotros form input#fileInput {
+    margin:0;
+}
+#contact-nosotros .contact-upload{
+    margin: 4% 10px;
+    color: #555;
+}
+#contact-nosotros .contact-upload p{
+    padding-left: 15px;
 }
 #contact-nosotros form textarea{
     margin: 4% 10px;
@@ -1703,7 +1737,7 @@ footer p{
     width: 95%;
     border: 4px solid #ccc!important;
 }
-#contact-nosotros form input:not(:nth-child(5)),
+#contact-nosotros form > input:not(:nth-child(5)),
 #contact-nosotros form textarea{
     outline: none;
     background: transparent;
@@ -1812,5 +1846,20 @@ footer p{
   content: "\e913";
 }
 .icon-icon-21:before {
+  content: "\e914";
+}
+.icon-clock:before {
+  content: "\e910";
+}
+.icon-heart:before {
+  content: "\e911";
+}
+.icon-group:before {
+  content: "\e912";
+}
+.icon-tiro:before {
+  content: "\e913";
+}
+.icon-safety-pin:before {
   content: "\e914";
 }
