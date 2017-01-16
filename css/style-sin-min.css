@@ -1627,6 +1627,17 @@ footer p{
     color: #323232;;
     margin-bottom: 5%;
 }
+@media (max-width: 767px) {
+    #nosotros .nosotros h2{
+        font-size: 25px;
+    }
+    #nosotros .nosotros h2 b{
+        font-size: 50px;
+    }
+    #nosotros .nosotros p{
+        font-size: 20px;
+    }    
+}
 #nosotros .nosotros img{
     margin: 2% auto;
 }
@@ -1657,7 +1668,7 @@ footer p{
 }
 @media (max-width: 768px) {
     #nosotros .valores{
-        margin:auto 15%;
+        margin:auto 8%;
         margin-bottom: 10%;
     }
 }
