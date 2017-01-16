@@ -109,6 +109,7 @@ header nav ul li a i{
 .menu-flotante ul li:nth-child(1) a{
     background-color: black;
 }
+
 .menu-flotante ul li a:hover{
     text-decoration: none;
     background: #DD0000;
@@ -122,6 +123,44 @@ header nav ul li a i{
     vertical-align: middle;
     color: white;
     font-size: 18px;
+}
+.menu-flotante ul li:not(:first-child) a:after{
+    content: "";
+    position: absolute;
+    font-family: 'GothamRnd';
+    background: #DD0000;
+    color: white;
+    font-weight: 700;
+    width: 115px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    border-radius: 0 5px 5px 0;
+}
+.menu-flotante ul li:not(:first-child):hover a:after{
+    display: flex;
+    animation: title-menu .3s linear;
+    animation-fill-mode: both;
+}
+@keyframes title-menu {
+    100% {opacity: 1;}
+}
+.menu-flotante ul li:nth-child(2) a:after{
+    content: "Home";
+}
+.menu-flotante ul li:nth-child(3) a:after{
+    content: "Servicios";
+}
+.menu-flotante ul li:nth-child(4) a:after{
+    content: "Portafolio";
+}
+.menu-flotante ul li:nth-child(5) a:after{
+    content: "contacto";
+}
+.menu-flotante ul li:nth-child(6) a:after{
+    content: "Blog";
 }
 @media (min-width: 0px) and (max-width: 1170px){
     header{
@@ -1625,7 +1664,8 @@ footer p{
     line-height: 2;
     padding-bottom: 3%;
     margin-bottom: 20%;
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
+    border-color: #ccc;
 }
 #contact-nosotros{
     padding-top: 50px;
